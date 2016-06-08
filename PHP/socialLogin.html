@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+    </head>
+    <body>
+        <script src="socialLogin.js">
+        </script>
+
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+        <div id="status"></div>
+        <br>
+        <div id="profile"></div>
+        <br>
+        <div class="icons-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <button class="btn azm-social azm-btn azm-pill azm-shadow-bottom azm-facebook" onclick="FBLogin()"><i class="fa fa-facebook"></i> Log in with Facebook</button>
+                        <button class="btn azm-social azm-btn azm-pill azm-shadow-bottom azm-email-1" onclick="GPLogin()"><i class="fa fa-at"></i> Email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</html>
